@@ -2,6 +2,8 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
 }
 
 .flex {
@@ -50,6 +52,9 @@ body {
 
 body {
 	font-size: 1rem;
+	font-family: Inter;
+	color: #152640;
+	font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
 }
 
 ul,
@@ -63,4 +68,11 @@ h4,
 h5,
 h6 {
 	margin: 0;
+}
+
+.container {
+	max-width: 1440px;
+	padding: 0 150px;
+	display: block;
+	margin: 0 auto;
 }
