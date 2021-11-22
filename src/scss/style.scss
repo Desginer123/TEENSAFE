@@ -39,12 +39,6 @@
   transition: all 0.3s ease-in-out
 }
 
-.dropdown:hover::after {
-  transform: rotate(-225deg) translateY(-50%) scale(1, -1);
-  top: 15%;
-  transition: all 0.3s ease-in-out;
-}
-
 .header-wrapper {
   padding: 20px 0;
   display: -webkit-flex;
