@@ -1,3 +1,5 @@
 node_modules
 build
 tasks/bs_html.js
+tasks/deploy.js
+tasks/ftp_settings.json
