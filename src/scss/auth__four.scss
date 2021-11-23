@@ -1,0 +1,18 @@
+@import "base/*.scss";
+@import "global/*.scss";
+@import "**/_*.scss";
+@import "../components/**/*.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+.auth {
+  &__subtitle-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #152640;
+    text-align: center;
+  }
+  &__group {
+    margin: 0;
+  }
+}

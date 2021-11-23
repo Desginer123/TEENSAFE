@@ -1,0 +1,163 @@
+@media screen and (max-width: 805px) {
+  .auth {
+    .container {
+      max-width: 1440px;
+      width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .privacy {
+    &__inner {
+      padding: 78px 32px 0 32px;
+      &-title-text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 348px;
+
+        color: #152640;
+        margin: 0 0 24px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .auth {
+    &__form {
+      max-width: 287px;
+      min-height: 415px;
+      padding: 27px 11px 24px 12px;
+    }
+    &__title-text {
+      font-weight: 600;
+      font-size: 18px;
+      margin: 0 0 20px 0;
+    }
+    &__subtitle-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #152640;
+      text-align: center;
+    }
+    &__group {
+      margin: 0 0 16px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      &-title {
+        font-size: 14px;
+        line-height: 150%;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 150%;
+        padding: 16px 10px 13px 10px;
+        &::placeholder {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+        }
+      }
+      &-forgot-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0 0 0 8px;
+
+        color: #152640;
+      }
+      &-forgot-password-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+
+        color: #152640;
+      }
+    }
+    &__button {
+      text-align: center;
+      margin: 0 0 15px 0;
+      max-width: 264px;
+      width: 100%;
+      &-text {
+        padding: 14px 74px;
+      }
+    }
+    &__account {
+      flex-direction: column;
+      &-text {
+        font-size: 14px;
+        line-height: 150%;
+      }
+      &-link {
+        font-size: 14px;
+        line-height: 150%;
+      }
+    }
+    &-input-checkbox {
+      appearance: none;
+      width: 19px;
+      height: 19px;
+      border: 1px solid #269dd5;
+      border-radius: 2px;
+      &:hover {
+        border: 1px solid #072b62;
+      }
+      &:focus {
+        background-color: #072b62;
+
+        border: 1px solid #072b62;
+        border-radius: 2px;
+        background-image: url(../img/checkbox.svg);
+        background-position: 5px 6px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .privacy {
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      margin: 0 0 9px 0;
+      color: #152640;
+    }
+    &__inner {
+      padding: 78px 15px 0 15px;
+      &-description-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+
+        color: #152640;
+        margin: 0 0 16px 0;
+      }
+      &-title-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 287px;
+
+        color: #152640;
+      }
+      &-des-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        margin: 0 0 25px 0;
+        color: #152640;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
