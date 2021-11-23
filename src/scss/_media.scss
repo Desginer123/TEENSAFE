@@ -15,6 +15,9 @@
     display: block;
     margin: 0 auto;
   }
+  .auth__button-text {
+    max-width: 240px;
+  }
   .privacy {
     &__inner {
       padding: 78px 32px 0 32px;
@@ -106,7 +109,7 @@
       max-width: 264px;
       width: 100%;
       &-text {
-        padding: 14px 74px;
+        padding: 14px 55px;
       }
     }
     &__account {
