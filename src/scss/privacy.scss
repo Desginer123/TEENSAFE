@@ -1,8 +1,6 @@
-@import "base/*.scss";
-@import "global/*.scss";
-@import "**/_*.scss";
-@import "../components/**/*.scss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+$blue-color: #269dd5;
+$text-color: #152640;
+$hover-color: #072b62;
 
 .privacy {
   &__title {
@@ -15,7 +13,7 @@
   }
   &__inner {
     min-height: 100vh;
-    padding: 78px 150px 0 150px;
+    padding: 78px 0 0 0;
     background-image: url(../../src/img/privacy-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,11 +37,11 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
-			margin: 0 0 50px 0;
+      margin: 0 0 50px 0;
       color: #152640;
-			&:last-child {
-				margin: 0;
-			}
+      &:last-child {
+        margin: 0;
+      }
     }
   }
 }
