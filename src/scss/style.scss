@@ -6,7 +6,6 @@
 
 .header {
   box-shadow: 0px 4px 8px rgba(23, 66, 132, 0.09);
-  display: none;
 }
 
 .nav {
@@ -21,7 +20,7 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  color: #96add1;
+  color: $text-color;
   align-items: center;
   &:not(:last-child) {
     margin-right: 32px;
@@ -31,7 +30,7 @@
     margin-left: 6px;
   }
   &.dropdown svg path {
-    stroke: #96add1;
+    stroke: $text-color;
     transition: all 0.3s ease-in-out;
   }
   &.dropdown:hover svg path {
@@ -160,5 +159,93 @@
     }
   }
 }
+
+.promo {
+  padding: 36px 0 35px 0px;
+  background-image: url(../../img/intro-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    padding-top: 20px;
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &__subtitle {
+    margin-bottom: 1.5rem;
+  }
+  .platforms-wrapper {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    & img:first-child {
+      margin-left: 13px;
+    }
+    & img:not(:first-child) {
+      margin-left: 18px;
+    }
+  }
+  .intro__btns-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    & .btn:first-child {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.advantages-box {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.advantages__wrapper-item:nth-child(even) .advantages-box {
+    flex-direction: row-reverse;
+
+    & .advantages__text {
+      margin-right: 12rem;
+      margin-left: 4.25rem;
+    }
+  }
+
+.advantages__text {
+  margin-left: 12rem;
+  margin-right: 4.25rem;
+  &-subtitle {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 32px;
+    font-weight: 400;
+  }
+}
+.advantages-image img {
+  width: 390px;
+  object-fit: cover
+}
+
+.steps {
+  padding-top: 65px;
+  padding-bottom: 157px;
+  background-image: url(../../img/steps-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -3px;
+}
+
+
 
 @import "_media.scss";
