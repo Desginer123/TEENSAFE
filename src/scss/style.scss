@@ -55,12 +55,20 @@
   justify-content: space-between;
 }
 .section__auth {
+<<<<<<< HEAD
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../img/auth__fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+=======
     width: 100%;
 		height: 100vh;
     padding-top: 40px;
     background-image: url(../../img/auth__fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+>>>>>>> c25202763891a1264d28f95a3c979e2f5654ba28
 }
 
 .auth {
