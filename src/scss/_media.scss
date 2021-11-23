@@ -9,6 +9,23 @@
   }
 }
 
+@media screen and (max-width: 769px) {
+  .privacy {
+    &__inner {
+      padding: 78px 32px 0 32px;
+      &-title-text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 348px;
+
+        color: #152640;
+        margin: 0 0 24px 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 426px) {
   .auth {
     &__form {
@@ -101,6 +118,45 @@
         background-image: url(../img/checkbox.svg);
         background-position: 5px 6px;
         background-repeat: no-repeat;
+      }
+    }
+  }
+  .privacy {
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      margin: 0 0 9px 0;
+      color: #152640;
+    }
+    &__inner {
+      padding: 78px 15px 0 15px;
+      &-description-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+
+        color: #152640;
+        margin: 0 0 16px 0;
+      }
+      &-title-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 287px;
+
+        color: #152640;
+      }
+      &-des-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        margin: 0 0 25px 0;
+        color: #152640;
+        &:last-child {
+          margin: 0;
+        }
       }
     }
   }
