@@ -403,7 +403,7 @@ padding: 14px 33px;
 
 @media (max-width: 1357px) {
     .table {
-        width: 165px;
+        width: 100%;
     }
     .table__title h3 {
         font-size: 19px;
@@ -452,6 +452,9 @@ padding: 14px 33px;
         margin: 0;
         width: 100%;
     }
+    .blog {
+        padding-left: 0;
+    }
 } 
 
 @media (max-width: 916px) {
@@ -471,10 +474,10 @@ padding: 14px 33px;
         
     }
     .blog__comments-moderation .blog__comment {
-        width: 334px;
+        width: 100%;
     }
     .blog__user {
-        width: 334px;
+        width: 100%;
     }
     .blog__update {
         margin-bottom: 17px;
@@ -496,7 +499,7 @@ padding: 14px 33px;
         padding-top: 4px;
     }
     .blog__user-reply .blog__user {
-        width: 306px;
+        width: 100%;
     }
     .blog__user .user__reply .blog__user-name--reply {
         line-height: 4px;
@@ -512,12 +515,19 @@ padding: 14px 33px;
         }
         .form__text {
             textarea {
-                width: 296px;
+                width: 100%;
             }
         }
         
     }
     
+}
+
+@media (max-width: 684px) {
+    form .form__checkbox .form-text {
+        margin-top: -29px;
+        padding-left: 30px;
+    }
 }
 
 @media (max-width: 608px) {
@@ -556,12 +566,15 @@ padding: 14px 33px;
         }
     }
     .blog__comments-moderation .blog__comment, .blog__user {
-        width: 299px;
+        width: 289px;
     }
     .blog__user-reply {
         padding-left: 10px;
     }
     .blog__user-reply .blog__user {
-        width: 286px;
+        width: 280px;
+    }
+    form .form__text textarea {
+        width: 292px;
     }
 }
