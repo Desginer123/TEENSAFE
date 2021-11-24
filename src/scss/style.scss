@@ -287,6 +287,16 @@ margin-left: 4.25rem;
 align-items: center;
 &:not(:last-child) {
   margin-bottom: 83px;
+  & .steps-items__round::after  {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 176px;
+    bottom: -177px;
+    left: 50%;
+    border: 1px dashed #072B62;
+    background-color: transparent;
+  }
 }
 &:nth-child(2) .steps-items__round  {
   margin-right: 48px;
@@ -308,6 +318,8 @@ padding: 15px 22px 16px 22px;
 border: 1px solid $text-color;
 border-radius: 100%;
 margin-right: 81px;
+position: relative;
+
 
 
 }
