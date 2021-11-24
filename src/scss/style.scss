@@ -272,12 +272,14 @@ margin-left: 4.25rem;
   top: -3px;
 }
 .steps-items__wrapper {
-  margin-top: 42px;
+  max-width: 740px;
+  margin: 42px auto;
+  margin-bottom: 54px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .steps-items__item {
@@ -291,6 +293,9 @@ align-items: center;
 }
 &:nth-child(3) .steps-items__round  {
   margin-right: 43px;
+}
+&:first-child .steps-items__info {
+  margin-left: 115px;
 }
 }
 
@@ -309,6 +314,7 @@ margin-right: 81px;
 
 .steps-items__info {
   margin-left: 79px;
+  max-width: 360px;
 }
 
 .steps-items__info--title {
