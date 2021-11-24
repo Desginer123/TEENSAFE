@@ -473,4 +473,14 @@ object-fit: cover;
       }
     }
   }
+	.error {
+		&__inner {
+	
+			&-button {
+				padding: 18px 0;
+				width: 100%;
+				max-width: 288px;
+			}
+		}
+	}
 }
