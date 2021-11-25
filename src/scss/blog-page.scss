@@ -1,0 +1,154 @@
+$blue-color: #269DD5;
+$text-color: #152640;
+$hover-color: #072B62;
+.blog-section {
+  padding-top: 56px;
+  padding-bottom: 177px;
+  background-image: url(../../img/price-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.blog__items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  place-items: center;
+}
+
+.blog__image {
+  & img {
+    max-width: 280px;
+    height: 220px;
+    object-fit: cover;
+    padding: 0!important;
+    border-radius: 7px 7px 0 0;
+  }
+}
+
+.blog__items-item {
+  max-width: 280px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(17,148,210,.31);
+  }
+}
+
+.blog__items-item--text__wrapper {
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 16px;
+  color: $text-color;
+  padding: 0 15px;
+  padding-left: 10px;
+  background-color: #fff;
+  border-radius: 0px 0px 7px 7px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  position: relative;
+  top: -3px;
+}
+
+.blog-item-comments {
+  img {
+    width: 12px;
+    height: 15px;
+    object-fit: cover
+  }
+}
+
+.blog__items-item--text__footer {
+  margin-top: 15px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog-items-left {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.blog-item-date {
+  font-size: 10px;
+}
+
+.blog-item-comments {
+  display: flex;
+align-items: center;
+margin-left: 10px;
+}
+
+.blog-item--read {
+  margin-left: 18px;
+  color: $blue-color;
+}
+.blog-item--read svg {
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    transform: rotate(90deg) scale(1.05);
+  }
+}
+.blog-item-comments img {
+    width: 16px;
+    height: 16px;
+    -o-object-fit: cover;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.blog-single-item__title {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 4px;
+  background: rgba(0,0,0,0.7);
+  font-size: 18px;
+  padding: 15px 10px 15px 10px;
+}
+
+.blog__items-item--top {
+  position: relative;
+}
+
+@media(max-width: 970px) {
+  .blog__items-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog__image img {
+    max-width: 100%;
+  }
+  .blog__items-item {
+    max-width: 330px;
+  }
+  .blog-section {
+    padding-top: 24px;
+    background-image: url(../../img/price-bg-tablet.png);
+  }
+}
+
+@media(max-width: 630px) {
+  .blog__items-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .blog__image img {
+    max-width: 100%;
+  }
+  .blog__items-item {
+    max-width: 280px;
+  }
+  .blog-section {
+    padding-top: 24px;
+    background-image: url(../../img/price-bg-mobile.png);
+    padding-bottom: 57px;
+  }
+}

@@ -25,7 +25,7 @@ dropdownLinks.forEach((link, i) => {
 
 });
 
-if(window.innerWidth < 766) {
+if(window.innerWidth < 766 && window.location.pathname=='/') {
   let stepImage = document.querySelectorAll('.steps-items__img');
   let stepWebp = document.querySelectorAll('.steps-items__item picture source');
 
@@ -38,3 +38,44 @@ if(window.innerWidth < 766) {
   stepWebp[2].setAttribute('srcset', './img/step-3-m.webp')
 
 }
+
+let tabs = document.querySelectorAll('.price-tab'),
+// tabs content with same index
+tabsContent = document.querySelectorAll('.tab-content'),
+// wrapper of btn
+wrapper = document.querySelector('.price-tabs');
+
+function hideTabsContent() {
+// hide all tabs content
+tabsContent.forEach(e => {
+    e.classList.add('tab-hidden')
+});
+tabs.forEach(e => {
+    // remove all active
+    e.classList.remove('active');
+})
+};
+function showTabContent(e) {
+// show target tab default item (first)
+tabsContent[e].classList.remove('tab-hidden')
+tabs[e].classList.add('active');
+
+};
+// hide all tabs
+hideTabsContent();
+showTabContent(0)
+
+
+
+wrapper.addEventListener('click', function(event) {
+// get all tabs. 1 element = item and have a key
+tabs.forEach((item2,key) => {
+    // if we click on item
+    if(item2.contains(event.target)) {
+        // hide all others
+        hideTabsContent()
+        // show chosen
+        showTabContent(key);
+    };
+});
+});
