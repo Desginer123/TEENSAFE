@@ -18,7 +18,7 @@ $hover-color: #072B62;
 
 
 .price__inner {
-  background-image: url(../../img/price-bg.png);
+  background-image: url(../img/price-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -341,7 +341,7 @@ transition: .3s ease-in-out;
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url(../../img/price-discount-bg.svg);
+  background-image: url(../img/price-discount-bg.svg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -376,14 +376,14 @@ transition: .3s ease-in-out;
     flex-direction: column;
   }
   .price__inner {
-    background-image: url(../../img/price-bg-tablet.png);
+    background-image: url(../img/price-bg-tablet.png);
   }
 
 }
 
 @media (max-width: 600px) {
 .price__inner {
-    background-image: url(../../img/price-bg-mobile.png);
+    background-image: url(../img/price-bg-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
