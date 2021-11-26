@@ -1,88 +1,109 @@
-<header class="header">
-    <div class="header-wrapper">
-      <a href="/" class="header__link">
-        <img src="./img/teensafe-logo.svg" alt="logo">
-      </a>
-      <nav class="nav">
-        <div class="desktop-dropdown__wrapper">
-          <a href="" class="nav__item dropdown"><span>Products</span>
-            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#152640" stroke-width="2"/>
-            </svg>
-          </a>
-          <div class="dropdown-content">
-            <a href="" class="dropdown-content__item">Call Tracking</a>
-            <a href="" class="dropdown-content__item">Message Monitoring</a>
-            <a href="" class="dropdown-content__item">Location</a>
-          </div>
-        </div>
-        <div class="desktop-dropdown__wrapper">
-          <a href="" class="nav__item dropdown">
-            <span>Features</span>
-            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#152640" stroke-width="2"/>
-            </svg>
-
-          </a>
-          <div class="dropdown-content">
-            <a href="" class="dropdown-content__item">Call Tracking</a>
-            <a href="" class="dropdown-content__item">Message Monitoring</a>
-            <a href="" class="dropdown-content__item">Location</a>
-          </div>
-        </div>
-
-        <a href="" class="nav__item">Demo</a>
-        <a href="/price.html" class="nav__item">Pricing</a>
-        <a href="/blog.html" class="nav__item">Blog</a>
-      </nav>
-      <a href="/register.html" class="btn header-btn">Sign Up Free</a>
-    </div>
-    <div class="tablet-header-wrapper">
-      <div class="tablet-header">
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="tablet-header--items">
-            <a href="/" class="header__link">
-
-            <img src="./img/teensafe-logo.svg" alt="logo">
-          </a>
-
-            <a href="/register.html" class="btn header-btn">Sign Up Free</a>
-          </div>
-
-      </div>
-      <div class="tablet-header__menu hidden">
-        <nav class="nav">
-          <a  class="nav__item dropdown"><span>Products</span>
-            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#152640" stroke-width="2"/>
-            </svg>
-          </a>
-          <div class="dropdown-content dropdown-content-tablet">
-            <a href="" class="dropdown-content__item">Call Tracking</a>
-            <a href="" class="dropdown-content__item">Message Monitoring</a>
-            <a href="" class="dropdown-content__item">Location</a>
-          </div>
-          <a  class="nav__item dropdown">
-            <span>Features</span>
-            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#152640" stroke-width="2"/>
-            </svg>
-          </a>
-          <div class="dropdown-content dropdown-content-tablet">
-            <a href="" class="dropdown-content__item">Call Tracking</a>
-            <a href="" class="dropdown-content__item">Message Monitoring</a>
-            <a href="" class="dropdown-content__item">Location</a>
-          </div>
-
-          <a href="" class="nav__item">Demo</a>
-          <a href="/price.html" class="nav__item">Pricing</a>
-          <a href="/blog.html" class="nav__item">Blog</a>
-        </nav>
-        <a href="/register.html" class="btn header-btn">Sign Up Free</a>
-      </div>
-    </div>
+<header class="header__main header">
+	<div class="header__container container">
+		<div class="header__inner inner">
+			<div class="header__logo logo">
+				<a href="#" class="header__logo-link link">
+					<picture>
+						<source srcset="../../img/logo__mobile.svg" alt="logo" media='(max-width: 426px)'>
+						<img src="../../img/logo.svg" alt="logo" media='(min-width: 427px)'>
+					</picture>
+				</a>
+			</div>
+			<form class="header__form form">
+				<input type="text" placeholder="Поиск" class="header__form-search text">
+				<span class="header__form-icon"></span>
+			</form>
+			<div class="header__account">
+				<button class="header__hamburger">
+					<span class="header__menu"></span>
+					<span class="header__menu"></span>
+					<span class="header__menu"></span>
+				</button>
+				<div class="header__account-description">
+					<button class="header__account-description-text">
+						Войти
+					</button>
+				</div>
+			</div>
+			<nav class="nav nav__menu">
+				<ul class="nav__item">
+					<li class="nav__list">
+						<div class="nav__list-img">
+							<img src="../../img/catalog.svg" alt="catalog">
+						</div>
+						<div class="nav__list-text">
+							<a href="#" class="nav__link link">Каталог</a>
+						</div>
+					</li>
+					<li class="nav__list">
+						<div class="nav__list-img">
+							<img src="../../img/favorites.svg" alt="favorites">
+						</div>
+						<div class="nav__list-text">
+							<a href="#" class="nav__link link">Избранное</a>
+						</div>
+					</li>
+					<li class="nav__list">
+						<div class="nav__list-img">
+							<img src="../../img/stock.svg" alt="stock">
+						</div>
+						<div class="nav__list-text">
+							<a href="#" class="nav__link link">Акции</a>
+						</div>
+					</li>
+					<li class="nav__list">
+						<div class="nav__list-img">
+							<img src="../../img/news.svg" alt="news">
+						</div>
+						<div class="nav__list-text">
+							<a href="#" class="nav__link link">Новости</a>
+						</div>
+					</li>
+					<li class="nav__list">
+						<div class="nav__list-img">
+							<img src="../../img/reviews.svg" alt="reviews">
+						</div>
+						<div class="nav__list-text">
+							<a href="#" class="nav__link link">Отзывы</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="nav__item-two">
+					<li class="nav__list-two">
+						<a href="#" class="nav__link-two link">Оплата и доставка</a>
+					</li>
+					<li class="nav__list-two">
+						<a href="#" class="nav__link-two link">Часто спрашивают</a>
+					</li>
+					<li class="nav__list-two">
+						<a href="#" class="nav__link-two link">Обратная связь</a>
+					</li>
+					<li class="nav__list-two">
+						<a href="#" class="nav__link-two link">Контакты</a>
+					</li>
+				</ul>
+				<div class="nav__support">
+					<div class="nav__support-img">
+						<img src="../../img/support.svg" alt="support">
+					</div>
+					<div class="nav__support-preview">
+						<h2 class="nav__support-preview__title">Остались вопросы?</h2>
+						<p class="nav__support-preview__subtitle">Обратитесь в нашу службу поддержки</p>
+						<button class="nav__support-preview__button">Перейти</button>
+					</div>
+				</div>
+			</nav>
+			<div class="header__icon icon">
+				<div class="header__icon-img header__icon-img_before img">
+					<img src="../../img/heart.svg" alt="heart">
+				</div>
+				<div class="header__icon-img header__icon-img_after img">
+					<img src="../../img/bag.svg" alt="bag">
+				</div>
+				<div class="header__icon-img img">
+					<img src="../../img/dog.svg" alt="dog">
+				</div>
+			</div>
+		</div>
+	</div>
 </header>
