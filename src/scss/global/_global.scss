@@ -89,7 +89,7 @@ h6 {
 		font-size: 18px;
 		line-height: 22px;
 		color: #ffffff;
-		padding: 14px 67px 14px 68px;
+		padding: 14px 40px 14px 41px;
 		background-color: $blue-color;
 		cursor: pointer;
 		box-shadow: 0px 0px 20px rgba(17, 148, 210, 0.31);
@@ -111,12 +111,13 @@ h6 {
 		}
 }
 
+
 .transparent-btn {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
 	color: $blue-color;
-	padding: 14px 67px 14px 68px;
+	padding: 14px 40px 14px 41px;
 	background-color: transparent;
 	filter: drop-shadow(0px 4px 14px rgba(34, 150, 204, 0.4));
 	border-radius: 4px;

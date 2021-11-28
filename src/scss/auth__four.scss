@@ -12,5 +12,11 @@ $hover-color: #072B62;
   }
   &__group {
     margin: 0;
+    &-title {
+      &:focus {
+        color: transparent;
+      }
+    }
   }
 }
+
