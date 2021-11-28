@@ -31,6 +31,7 @@
 }
 
 @media(min-width: 1025px) {
+
   
   .header-wrapper {
     display: -webkit-flex;
@@ -40,15 +41,7 @@
   .tablet-header-wrapper {
     display: none;
   }
-  .desktop-dropdown__wrapper:hover .nav__item {
-    color: #269dd5
-  }
-  .dropdown-content:hover .nav__item {
-    color: #269dd5
-  }
-  .desktop-dropdown__wrapper::after:hover .nav__item {
-    color: #269dd5
-  }
+
   .desktop-dropdown__wrapper {
     
     position: relative;
@@ -105,6 +98,15 @@
     transition: all 0.3s ease-in-out;
     max-height: 600px;
   }
+    .desktop-dropdown__wrapper:hover .nav__item {
+    color: #269dd5
+  }
+  .desktop-dropdown__wrapper:hover .nav__item svg path {
+    stroke: #269dd5
+  }
+  
+  
+  
  
 }
 
