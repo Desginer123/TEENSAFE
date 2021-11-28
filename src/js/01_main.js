@@ -38,12 +38,13 @@ if(window.innerWidth < 766 && window.location.pathname=='/') {
   stepWebp[2].setAttribute('srcset', './img/step-3-m.webp')
 
 }
-if (window.location.href.indexOf('price') > 1) {
+
+if(window.location.href.indexOf('price') > 1) {
   let tabs = document.querySelectorAll('.price-tab');
 // tabs content with same index
   let tabsContent = document.querySelectorAll('.tab-content');
   // wrapper of btn
-  let priceTabsWrapper = document.querySelector('.price-tabs');
+  const wrapper = document.querySelector('.price-tabs');
 
   function hideTabsContent() {
   // hide all tabs content
@@ -68,7 +69,8 @@ if (window.location.href.indexOf('price') > 1) {
 
 
 
-  priceTabsWrapper.addEventListener('click', function(event) {
+
+wrapper.addEventListener('click', function(event) {
   // get all tabs. 1 element = item and have a key
   tabs.forEach((item2,key) => {
       // if we click on item
@@ -80,14 +82,18 @@ if (window.location.href.indexOf('price') > 1) {
       };
   });
   });
-
 }
+
+
+
+
+
 
 let scrollToTop = document.querySelector('.scroll-to-top');
 document.addEventListener('DOMContentLoaded', () => {
   scrollToTop.style.opacity = '0';
   document.addEventListener('scroll', () => {
-    if(window.pageYOffset > 100) {
+    if(window.pageYOffset > 80) {
       scrollToTop.style.opacity = '1';
     }
     else {
@@ -96,18 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-};
 
 
 

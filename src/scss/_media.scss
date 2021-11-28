@@ -32,7 +32,6 @@
 
 @media(min-width: 1025px) {
 
-  
   .header-wrapper {
     display: -webkit-flex;
     display: -ms-flex;
@@ -41,9 +40,8 @@
   .tablet-header-wrapper {
     display: none;
   }
-
   .desktop-dropdown__wrapper {
-    
+
     position: relative;
     &::before {
       bottom: -40px;
@@ -55,7 +53,7 @@
       content: '';
       width: 71%;
       &:hover + .dropdown-content{
-        
+
         transition: all 0.3s ease-in-out;
         max-height: 800px;
         opacity: 1;
@@ -63,7 +61,7 @@
       }
     }
     & .dropdown-content {
-      
+
       max-height: 0px;
       opacity: 0;
       display: flex;
@@ -98,16 +96,13 @@
     transition: all 0.3s ease-in-out;
     max-height: 600px;
   }
-    .desktop-dropdown__wrapper:hover .nav__item {
-    color: #269dd5
+  .desktop-dropdown__wrapper:hover .nav__item {
+    color: $blue-color;
   }
-  .desktop-dropdown__wrapper:hover .nav__item svg path {
-    stroke: #269dd5
+  .desktop-dropdown__wrapper:hover svg path {
+    stroke: $blue-color;
   }
-  
-  
-  
- 
+
 }
 
 
@@ -117,8 +112,14 @@
     display: none;
   }
   
+  .steps-items__item:first-child {
+    display: flex;
+    place-self: flex-start;
+    padding-left: 22px;
+   }
   .tablet-header {
     position: fixed;
+    top: 0;
     width: 100%;
     padding: 20px 32px;
     display: -webkit-flex;
@@ -371,8 +372,11 @@ margin-bottom: -210px;
 
 @media screen and (max-width: 980px) {
   .tablet-header .header__link {
-    margin-right: 174px;
+    margin-right: 214px;
 }
+  .btn {
+    padding: 11px 27px 11px 27px;
+  }
 }
 
 @media screen and (max-width: 939px) {
@@ -383,13 +387,13 @@ margin-bottom: -210px;
 
 @media screen and (max-width: 890px) {
   .tablet-header .header__link {
-    margin-right: 121px;
+    margin-right: 176px;
 }
 }
 
 @media screen and (max-width: 853px) {
   .tablet-header .header__link {
-    margin-right: 107px;
+    margin-right: 179px;
 }
 }
 
@@ -401,24 +405,70 @@ margin-bottom: -210px;
     margin: 0 auto;
   }
   .tablet-header .header__link {
-    margin-right: 95px;
+    margin-right: 145px;
 }
 }
 
+@media screen and (max-width: 800px) {
+  .steps-items__item:first-child {
+    padding-left: 19px;
+  }
+}
 
 @media screen and (max-width: 797px) {
   .tablet-header .header__link {
-    margin-right: 79px;
+    margin-right: 139px;
 }
 }
+
+
+@media screen and (max-width: 790px) {
+  .steps-items__item:first-child {
+    padding-left: 14px;
+}
+}
+
+@media screen and (max-width: 784px) {
+  .steps-items__item:first-child {
+    padding-left: 9px;
+}
+}
+
+@media screen and (max-width: 775px) {
+  .steps-items__item:first-child {
+    padding-left: 6px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+  .steps-items__item:first-child {
+    padding-left: 3px;
+}
+
+}
+
+@media screen and (max-width: 763px) {
+  .steps-items__item:first-child {
+    padding-left: 0px;
+}
+}
+
 
 
 @media screen and (max-width: 732px) {
-  .tablet-header .header__link {
-    margin-right: 49px;
+  .tablet-header .header__link { 
+    margin-right: 118px;
+
 }
 }
 
+
+@media screen and (max-width: 728px) {
+  .steps-items__item:nth-child(3)  {
+    margin-top: -8px;
+  }
+}
 
 @media screen and (max-width: 684px) {
   .auth__group-text::placeholder {
@@ -428,15 +478,67 @@ margin-bottom: -210px;
     color: #96add1;
   }
   .tablet-header .header__link {
-    margin-right: 27px;
+    margin-right: 91px;
   }
+}
+
+@media screen and (max-width: 651px) {
+  .steps-items__item:nth-child(2) {
+    margin-top: -13px;
+}
+  .steps-items__item:nth-child(3) {
+      margin-top: -19px;
+  }
+}
+
+
+@media screen and (max-width: 649px) {
+  .steps-items__item:nth-child(2) {
+    margin-top: -21px;
+}
 }
 
 @media screen and (max-width: 640px) {
   .tablet-header .header__link {
-    margin-right: 6px;
+    margin-right: 83px;
 }
 }
+
+
+@media screen and (max-width: 615px) {
+  .tablet-header .header__link {
+    margin-right: 72px;
+}
+}
+
+@media screen and (max-width: 611px) {
+  .steps-items__item:nth-child(3) {
+    margin-top: -34px;
+}
+}
+
+@media screen and (max-width: 610px) {
+  .steps-items__item:nth-child(2) {
+    margin-top: -37px;
+}
+  .steps-items__item:nth-child(3) {
+    margin-top: -50px;
+}
+}
+
+@media screen and (max-width: 606px) {
+  .steps-items__item:nth-child(3) {
+    margin-top: -65px;
+}
+
+}
+
+@media screen and (max-width: 602px) {
+  .steps-items__item:nth-child(2) {
+    margin-top: -51px;
+}
+}
+
 
 @media screen and (max-width: 600px) {
   .container {
@@ -450,6 +552,15 @@ margin-bottom: -210px;
     padding: 3px 8px 3px 8px;
     font-size: 10px;
   }
+  .steps-items__item:nth-child(2) {
+    margin-top: 0px;
+}
+.steps-items__item:nth-child(3) {
+  margin-top: 0px;
+}
+.steps-items__item:first-child {
+  place-self: center;
+}
   .auth__button-text {
     font-size: 18px;
   }
@@ -495,7 +606,7 @@ object-fit: cover;
   }
 
   .tablet-header .header__link {
-    margin-right: 23px;
+    margin-right: 179px
   }
   .auth__button-text {
     max-width: 240px;
@@ -660,6 +771,40 @@ object-fit: cover;
 }
 
 
+@media screen and (max-width: 565px) {
+  .tablet-header .header__link {
+    margin-right: 149px;
+}
+}
+
+@media screen and (max-width: 526px) { 
+  .tablet-header .header__link {
+    margin-right: 132px;
+   }
+}
+
+
+@media screen and (max-width: 470px) {
+  .tablet-header .header__link {
+    margin-right: 113px;
+}
+}
+
+
+@media screen and (max-width: 438px) {
+  .tablet-header .header__link {
+    margin-right: 99px;
+}
+}
+
+@media screen and (max-width: 412px) {
+  .tablet-header .header__link {
+    margin-right: 82px;
+}
+}
+
+
+
 @media screen and (max-width: 426px) {
   .container {
     max-width: 320px;
@@ -815,6 +960,34 @@ object-fit: cover;
 		}
 	}
 }
+
+
+@media screen and (max-width: 384px) {
+  .tablet-header .header__link {
+    margin-right: 67px;
+}
+}
+
+@media screen and (max-width: 352px) {
+  .tablet-header .header__link {
+    margin-right: 59px;
+}
+}
+
+@media screen and (max-width: 342px) {
+  .tablet-header .header__link {
+    margin-right: 50px;
+}
+}
+
+@media screen and (max-width: 336px) {
+  .tablet-header .header__link {
+    margin-right: 43px;
+}
+}
+
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .tablet-header .hamburger.active span:nth-child(1) {

@@ -128,8 +128,8 @@ text-align: center;
     content: "";
     position: absolute;
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: #269DD5;
     top: 50%;
     left: 50%;
@@ -165,6 +165,7 @@ text-align: center;
   margin-top: 68px;
 }
 .price-content__item {
+  border-radius: 6px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -385,6 +386,11 @@ transition: .3s ease-in-out;
   & .price-btn {
     background-color: $hover-color;
     border-color: $hover-color;
+    transition: .3s ease-in-out;
+    &:hover {
+      background: #269DD5;
+      border-color: #269DD5;
+    }
   }
   & .price-item--title {
     background-color: $hover-color;
