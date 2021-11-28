@@ -48,8 +48,13 @@ z-index: 666;
   color: $text-color;
   margin-bottom: 6px;
   line-height: 32px;
+  transition: all .1s linear;
   & > span {
     font-weight: 500;
+    
+  }
+  a {
+   
   }
 }
 
@@ -60,7 +65,11 @@ z-index: 666;
   line-height: 22px;
 }
 
-
+.footer-links-item--hover {
+  &:hover {
+    color: #269DD5;
+  }
+}
 .socail-wrapper {
   display: -webkit-flex;
   display: -ms-flex;

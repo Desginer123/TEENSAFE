@@ -3,6 +3,7 @@ $text-color: #152640;
 $hover-color: #072b62;
 
 .privacy {
+  
   &__title {
     font-weight: 700;
     font-size: 40px;
@@ -10,8 +11,10 @@ $hover-color: #072b62;
     text-align: center;
     margin: 0 0 9px 0;
     color: #152640;
+    padding-top: 50px;
   }
   &__inner {
+    padding-bottom: 190px;
     min-height: 100vh;
     padding: 78px 0 0 0;
     background-image: url(../img/privacy-bg.svg);

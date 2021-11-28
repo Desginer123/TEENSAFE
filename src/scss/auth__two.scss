@@ -33,12 +33,17 @@ $hover-color: #072b62;
       font-size: 18px;
       line-height: 32px;
       color: #152640;
+     
       &::placeholder {
         font-weight: 500;
         font-size: 18px;
         line-height: 32px;
 
         color: #96add1;
+       
+      }
+      &:focus::placeholder {
+        color: transparent;
       }
       &:hover {
         border: 1px solid $hover-color;

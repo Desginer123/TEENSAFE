@@ -38,8 +38,8 @@ if(window.innerWidth < 766 && window.location.pathname=='/') {
   stepWebp[2].setAttribute('srcset', './img/step-3-m.webp')
 
 }
-
-let tabs = document.querySelectorAll('.price-tab');
+if (window.location.href.indexOf('price') > 1) {
+  let tabs = document.querySelectorAll('.price-tab');
 // tabs content with same index
 if (tabs != null || tabs != undefined) {
   let tabsContent = document.querySelectorAll('.tab-content'),
@@ -65,6 +65,8 @@ if (tabs != null || tabs != undefined) {
   // hide all tabs
   hideTabsContent();
   showTabContent(0)
+} 
+
 
 
 
@@ -82,3 +84,32 @@ if (tabs != null || tabs != undefined) {
   });
 
 }
+
+let scrollToTop = document.querySelector('.scroll-to-top');
+document.addEventListener('DOMContentLoaded', () => {
+  scrollToTop.style.opacity = '0';
+  document.addEventListener('scroll', () => {
+    if(window.pageYOffset > 100) {
+      scrollToTop.style.opacity = '1';
+    }
+    else {
+      scrollToTop.style.opacity = '0'
+    }
+  })
+})
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
+
+
