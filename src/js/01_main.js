@@ -87,6 +87,8 @@ wrapper.addEventListener('click', function(event) {
 
 
 
+
+
 let scrollToTop = document.querySelector('.scroll-to-top');
 document.addEventListener('DOMContentLoaded', () => {
   scrollToTop.style.opacity = '0';
