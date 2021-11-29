@@ -7,7 +7,7 @@
 .table {
     margin-right: 32px;
 position: sticky;
-top: 40px;
+top: 120px;
  min-width: 273px;
  max-height: 399px;
  border: 1px solid #fff;
@@ -299,9 +299,10 @@ form {
         padding: 10px 10px;
         margin-right: 24px;
         font-size: 18px;
-        border: 1px solid #269DD5;
+        border: 1px solid #96ADD1;
         background-color: transparent;
         transition: border .3s linear;
+        border-radius: 4px;
         input:valid {
            border: 1px solid #C80202;
            &::placeholder {
@@ -309,7 +310,7 @@ form {
            }
            }
         &:hover {
-            border: 1px solid #072B62;
+            border: 1px solid #96ADD1;
         }
         &::placeholder {
             font-size: 18px;
@@ -325,21 +326,20 @@ form {
     .form__text {
         padding-bottom: 24px;
         textarea {
+            border-radius: 4px;
             margin-top: 24px;
             width: 835px;
             height: 245px;
             resize: none;
             background-color: transparent;
-            border: 1px solid #269DD5;
+            border: 1px solid #96ADD1;
             padding: 10px 10px;
             &::placeholder {
                 font-size: 18px;
                 line-height: 32px;
                 color: #96ADD1;
             }
-            &:hover {
-                border: 1px solid #072B62;
-            }
+           
             &:focus::placeholder {
                 color: transparent;
               }
@@ -468,8 +468,15 @@ box-shadow: 0px 0px 20px rgba(17, 148, 210, 0.31);
 
 
 
-@media (max-width: 1161px) {
+
+
+@media (max-width: 1302px) {
+    .blog__user-text {
+        font-size: 17px;
+    }
 }
+
+
 
 @media (max-width: 1056px) {
     .table {
@@ -485,6 +492,11 @@ box-shadow: 0px 0px 20px rgba(17, 148, 210, 0.31);
     }
 } 
 
+@media (max-width: 1024px) {
+    .blog__article-title h2 {
+        font-weight: 600;
+    }
+}
 
 
 
@@ -560,6 +572,17 @@ box-shadow: 0px 0px 20px rgba(17, 148, 210, 0.31);
     
    
    
+}
+
+@media (max-width: 678px) {
+    .blog__article-title h2 {
+        font-size: 18px;
+        line-height: 22px;
+        color: #152640;
+ }
+    form .form__checkbox .form-text {
+       font-weight: 400;
+    }
 }
 
 @media (max-width: 608px) {

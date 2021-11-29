@@ -378,9 +378,7 @@ margin-bottom: -210px;
   .tablet-header .header__link {
     margin-right: 214px;
 }
-  .btn {
-    padding: 11px 27px 11px 27px;
-  }
+  
 }
 
 @media screen and (max-width: 939px) {
@@ -440,7 +438,7 @@ margin-bottom: -210px;
 
 @media screen and (max-width: 775px) {
   .steps-items__item:first-child {
-    padding-left: 6px;
+    padding-left: 7px;
 }
 
 }
@@ -547,9 +545,16 @@ margin-bottom: -210px;
 @media screen and (max-width: 600px) {
 
   .login-menu {
+    left: -7rem;
     top: 2.6rem;
     padding: 14px;
     width: 154px;
+    &::after {
+      left: 113px;
+    }
+  }
+  .login-btn {
+    display: none;
   }
   .container {
     max-width: 769px;
@@ -722,7 +727,7 @@ object-fit: cover;
     margin-bottom: 24px;
   }
   .steps .btn {
-    font-size: 18px;
+    font-size: 16px;
     padding: 14px 48px;
     text-align: center;
   }
@@ -777,7 +782,7 @@ object-fit: cover;
   }
 }
 .auth__title-text {
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 
