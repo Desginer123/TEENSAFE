@@ -91,7 +91,7 @@ top: 40px;
             width: 25px;
             height: 25px;
             left: 6px;
-            top: 0px;
+            top: 2px;
             background-image: url(../img/comment.webp);
             background-repeat: no-repeat;
             
@@ -330,13 +330,15 @@ form {
             height: 245px;
             resize: none;
             background-color: transparent;
-            border-color: #96ADD1;
+            border: 1px solid #269DD5;
             padding: 10px 10px;
             &::placeholder {
                 font-size: 18px;
                 line-height: 32px;
                 color: #96ADD1;
-               
+            }
+            &:hover {
+                border: 1px solid #072B62;
             }
             &:focus::placeholder {
                 color: transparent;
@@ -536,6 +538,12 @@ box-shadow: 0px 0px 20px rgba(17, 148, 210, 0.31);
     
 }
 
+@media (max-width: 867px) {
+    form .form__text textarea {
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 684px) {
     form {
         .input__form::placeholder {
@@ -565,7 +573,7 @@ box-shadow: 0px 0px 20px rgba(17, 148, 210, 0.31);
         &::before {
             content: '';
             left: 6px;
-            top: -3px;
+            top: 1px;
         }   
      } 
 }

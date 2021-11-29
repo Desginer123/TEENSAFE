@@ -108,6 +108,10 @@
 
 
 @media (max-width: 1024px) {
+
+  .login-header {
+    margin-right: 23px;
+  }
   .header-wrapper {
     display: none;
   }
@@ -541,6 +545,12 @@ margin-bottom: -210px;
 
 
 @media screen and (max-width: 600px) {
+
+  .login-menu {
+    top: 2.6rem;
+    padding: 14px;
+    width: 154px;
+  }
   .container {
     max-width: 769px;
     width: 100%;
