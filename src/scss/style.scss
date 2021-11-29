@@ -29,6 +29,14 @@ $hover-color: #072B62;
   position: relative;
 }
 
+.header .login-menu {
+  display: none;
+}
+
+.header.active .login-menu {
+  display: block;
+}
+
 .login-menu {
   background-color: #fff;
   border: 1px solid #e0e0e0;
