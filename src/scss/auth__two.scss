@@ -12,6 +12,10 @@ $hover-color: #072b62;
     &-сolumn {
       margin: 0 0 32px 0;
     }
+    
+    .login-text {
+      padding-top: 5px;
+    }
     &-title {
       font-weight: 500;
       font-size: 18px;
@@ -50,14 +54,14 @@ $hover-color: #072b62;
         transition: all 0.3s ease-in-out;
       }
     }
-
+   
     &-forgot {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: inherit;
       &-checkbox {
         display: flex;
-        align-items: center;
+       
       }
       &-input-checkbox {
         appearance: none;

@@ -799,6 +799,15 @@ object-fit: cover;
 }
 
 
+@media screen and (max-width: 493px) {
+  form .form__checkbox .form-text {
+    font-size: 15px;
+  }
+  .auth__group-forgot-password-text {
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width: 470px) {
   .tablet-header .header__link {
     margin-right: 113px;
@@ -809,6 +818,18 @@ object-fit: cover;
 @media screen and (max-width: 438px) {
   .tablet-header .header__link {
     margin-right: 99px;
+}
+}
+
+@media screen and (max-width:426px) {
+  form .form__checkbox .form-text {
+    font-size: 12px;
+  }
+  form .form__checkbox .label {
+    padding-top: 0px;
+}
+.auth__group-forgot-password {
+  padding-top: 1px;
 }
 }
 

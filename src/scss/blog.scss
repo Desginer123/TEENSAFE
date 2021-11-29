@@ -357,6 +357,9 @@ form {
     }
 
     .form__checkbox {
+        .label {
+            padding-top: 4px;
+        }
         .form-text {
             display: block;
             font-weight: 500;
@@ -365,7 +368,7 @@ form {
             color: #152640;
             padding-bottom: 34px;
             padding-left: 29px;
-    margin-top: -24px;
+    margin-top: -22px;
         }
         .checkbox {
             display: none;
@@ -591,7 +594,7 @@ box-shadow: 0px 0px 20px rgba(17, 148, 210, 0.31);
  }
     form .form__checkbox .form-text {
        font-weight: 400;
-       margin-top: -28px;
+      
     }
 }
 
