@@ -8,7 +8,7 @@ $blue-color: #269DD5;
 $text-color: #152640;
 $hover-color: #072B62;
 
-.header { 
+.header {
 
   z-index: 50;
     position: sticky;
@@ -21,7 +21,6 @@ $hover-color: #072B62;
 
 .login-btn {
   display: none;
-  
   padding: 14px 57px 14px 57px;
 }
 .login-header {
@@ -36,6 +35,13 @@ $hover-color: #072B62;
 
 .header.active .login-header {
   display: block;
+}
+
+.header.active .login-btn {
+  display: block;
+}
+.header.active .header-btn {
+  display: none;
 }
 
 .login-menu {
@@ -54,9 +60,9 @@ $hover-color: #072B62;
  border-radius: 7px;
  &::after {
    content: "";
-  position: absolute; 
+  position: absolute;
   left: 33px; top: -19px;
-  border: 10px solid transparent; 
+  border: 10px solid transparent;
   border-bottom: 10px solid #fff;
   z-index: 20 ;
  }
@@ -68,18 +74,18 @@ $hover-color: #072B62;
    }
  }
  .password {
-   
+
   padding-bottom: 7px;
    padding-left: 16px;
    background-image: url(../img/password.png);
    background-repeat: no-repeat;
-   
+
  }
  .logout{
   padding-left: 17px;
   background-image: url(../img/logout.png);
   background-repeat: no-repeat;
-  
+
 }
 }
 
@@ -95,7 +101,7 @@ $hover-color: #072B62;
 	.login-menu {
 		display: flex;
 	}
-	
+
 }
 
 .login-header::after {
@@ -132,7 +138,7 @@ $hover-color: #072B62;
     stroke: $text-color;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .desktop-dropdown__wrapper:hover {
     stroke: $blue-color;
   }
