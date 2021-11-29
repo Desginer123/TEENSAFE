@@ -165,7 +165,7 @@ text-align: center;
   margin-top: 68px;
 }
 .price-content__item {
-  border-radius: 6px;
+  border-radius: 4px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -438,6 +438,12 @@ transition: .3s ease-in-out;
   .price__inner {
     background-image: url(../img/price-bg-tablet.png);
   }
+  .price-item--premium {
+    padding: 12px 130px 12px;
+  }
+  .price-item--family {
+    padding: 12px 144px 12px;
+  }
 
 }
 
@@ -459,6 +465,7 @@ transition: .3s ease-in-out;
 .price-content__items {
   margin-top: 24px;
 }
+
 }
 @media (max-width: 400px) {
   .price-subtitle {
