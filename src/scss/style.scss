@@ -29,11 +29,11 @@ $hover-color: #072B62;
   position: relative;
 }
 
-.header .login-menu {
+.header .login-header {
   display: none;
 }
 
-.header.active .login-menu {
+.header.active .login-header {
   display: block;
 }
 
@@ -42,7 +42,7 @@ $hover-color: #072B62;
   border: 1px solid #e0e0e0;
   border-top: none;
   padding: 23px;
-  display: flex;
+  display: none;
   align-items: center;
   width: 170px;
   position: absolute;
@@ -81,6 +81,26 @@ $hover-color: #072B62;
 
 .nav {
   display: flex;
+}
+
+.login-header:hover {
+	.login-menu {
+		display: flex;
+	}
+	
+}
+
+.login-header::after {
+	position: absolute;
+	content: '';
+	width: 25px;
+	height: 29px;
+}
+
+.login-header::after:hover {
+	.login-menu {
+		display: flex;
+	}
 }
 
 .nav__item {
@@ -419,6 +439,7 @@ position: relative;
   display: block;
 margin: 0 auto;
 max-width: 195px;
+text-align: center;
 }
 
 

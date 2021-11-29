@@ -299,8 +299,9 @@ form {
         padding: 10px 10px;
         margin-right: 24px;
         font-size: 18px;
-        border: 1px solid #269DD5;
+        border: 1px solid #96ADD1;
         background-color: transparent;
+		border-radius: 4px;
         transition: border .3s linear;
         input:valid {
            border: 1px solid #C80202;
@@ -310,6 +311,7 @@ form {
            }
         &:hover {
             border: 1px solid #072B62;
+			transition: all 0.3s ease-in-out;
         }
         &::placeholder {
             font-size: 18px;
@@ -330,8 +332,11 @@ form {
             height: 245px;
             resize: none;
             background-color: transparent;
-            border: 1px solid #269DD5;
+            border: 1px solid #96ADD1;
             padding: 10px 10px;
+			border-radius: 4px;
+						transition: all 0.3s ease-in-out;
+
             &::placeholder {
                 font-size: 18px;
                 line-height: 32px;
@@ -339,6 +344,8 @@ form {
             }
             &:hover {
                 border: 1px solid #072B62;
+			transition: all 0.3s ease-in-out;
+
             }
             &:focus::placeholder {
                 color: transparent;
@@ -356,7 +363,7 @@ form {
             color: #152640;
             padding-bottom: 34px;
             padding-left: 29px;
-    margin-top: -23px;
+    margin-top: -24px;
         }
         .checkbox {
             display: none;
