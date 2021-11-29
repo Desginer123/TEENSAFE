@@ -478,7 +478,8 @@ transition: .3s ease-in-out;
     padding: 0 6px;
   }
   .price-item--title {
-    padding: 12px 94px 11px;
+    padding: 12px 112.5px 11px;
+	max-width: 288px;
   }
   .price-item-radio--title {
     margin-right: 0;
