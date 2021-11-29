@@ -39,50 +39,51 @@ if(window.innerWidth < 766 && window.location.pathname=='/') {
 
 }
 
-if(window.location.href.indexOf('price') > 1) {
-  let tabs = document.querySelectorAll('.price-tab');
-// tabs content with same index
-  let tabsContent = document.querySelectorAll('.tab-content');
-  // wrapper of btn
-  const wrapper = document.querySelector('.price-tabs');
+let tabs = document.querySelectorAll('.price-tab');
+if(tabs != null && != undefined) {
+  // tabs content with same index
+    let tabsContent = document.querySelectorAll('.tab-content');
+    // wrapper of btn
+    const wrapper = document.querySelector('.price-tabs');
 
-  function hideTabsContent() {
-  // hide all tabs content
-  tabsContent.forEach(e => {
-      e.classList.add('tab-hidden')
-  });
-  tabs.forEach(e => {
-      // remove all active
-      e.classList.remove('active');
-  })
-  };
-  function showTabContent(e) {
-  // show target tab default item (first)
-  tabsContent[e].classList.remove('tab-hidden')
-  tabs[e].classList.add('active');
+    function hideTabsContent() {
+    // hide all tabs content
+    tabsContent.forEach(e => {
+        e.classList.add('tab-hidden')
+    });
+    tabs.forEach(e => {
+        // remove all active
+        e.classList.remove('active');
+    })
+    };
+    function showTabContent(e) {
+    // show target tab default item (first)
+    tabsContent[e].classList.remove('tab-hidden')
+    tabs[e].classList.add('active');
 
-  };
-  // hide all tabs
-  hideTabsContent();
-  showTabContent(0)
-
-
+    };
+    // hide all tabs
+    hideTabsContent();
+    showTabContent(0)
 
 
 
-wrapper.addEventListener('click', function(event) {
-  // get all tabs. 1 element = item and have a key
-  tabs.forEach((item2,key) => {
-      // if we click on item
-      if(item2.contains(event.target)) {
-          // hide all others
-          hideTabsContent()
-          // show chosen
-          showTabContent(key);
-      };
-  });
-  });
+
+
+  wrapper.addEventListener('click', function(event) {
+    // get all tabs. 1 element = item and have a key
+    tabs.forEach((item2,key) => {
+        // if we click on item
+        if(item2.contains(event.target)) {
+            // hide all others
+            hideTabsContent()
+            // show chosen
+            showTabContent(key);
+        };
+    });
+    });
 }
+
 
 
 
@@ -101,10 +102,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 })
-
-
-
-
-
-
-
