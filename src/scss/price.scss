@@ -388,8 +388,11 @@ transition: .3s ease-in-out;
     border-color: $hover-color;
     transition: .3s ease-in-out;
     &:hover {
-      background: #269DD5;
-      border-color: #269DD5;
+      background: #0D3C84;
+      border-color: #0D3C84;
+    }
+    &:focus {
+      background-color: #11499F;
     }
   }
   & .price-item--title {
@@ -478,7 +481,7 @@ transition: .3s ease-in-out;
     padding: 0 6px;
   }
   .price-item--title {
-    padding: 12px 112.5px 11px;
+    padding: 12px 114.5px 11px;
 	max-width: 288px;
   }
   .price-item-radio--title {

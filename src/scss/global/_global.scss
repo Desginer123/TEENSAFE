@@ -98,8 +98,8 @@ h6 {
 
 		transition: all 0.3s ease-in-out;
 		&:hover {
-			background-color: #072b62;
-			border: 2px solid $hover-color ;
+			background-color: #1888BD;
+			border: 2px solid #1888BD ;
 
 			transition: all 0.3s ease-in-out;
 		}
@@ -125,16 +125,15 @@ h6 {
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
 	&:hover {
-		border: 2px solid $hover-color ;
-		color: $hover-color;
-		background-color: transparent;
-		transition: all 0.3s ease-in-out;
+		border: 2px solid #1888BD ;
+		color: #fff;
+		background-color: #1888BD;
+		
 	}
 	&:focus {
 		border: 2px solid $hover-color ;
-		color: $hover-color;
-		transition: all 0.3s ease-in-out;
-		background-color: transparent
+		color: #fff;
+		background-color: #072B62;
 	}
 }
 

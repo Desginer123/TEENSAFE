@@ -18,8 +18,9 @@ $hover-color: #072b62;
     min-height: 100vh;
     padding: 78px 0 0 0;
     background-image: url(../img/privacy-bg.svg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    padding-bottom: 177px;
     &-description-text {
       font-weight: 400;
       font-size: 18px;

@@ -9,7 +9,6 @@ $text-color: #152640;
 $hover-color: #072B62;
 
 .header {
-
   z-index: 50;
     position: sticky;
     top: 0;
@@ -25,13 +24,16 @@ $hover-color: #072B62;
 }
 .login-header {
   position: relative;
-  display: none;
+}
+.login path{
+  transition: all .3s;
+}
+.login:hover path {
+    fill: #269DD5; 
 }
 
 
-.header .login-header {
-  display: none;
-}
+
 
 .header.active .login-header {
   display: block;
@@ -67,14 +69,14 @@ $hover-color: #072B62;
   z-index: 20 ;
  }
  a {
-   color: #96ADD1;
+   color: #96ADD1; 
    transition: all .2s;
    &:hover {
-     color: $blue-color;
+    color: #072B62;
    }
  }
  .password {
-
+ 
   padding-bottom: 7px;
    padding-left: 16px;
    background-image: url(../img/password.png);
@@ -175,7 +177,7 @@ $hover-color: #072B62;
   padding-top: 40px;
   background-image: url(../img/auth__fon.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .auth {
@@ -340,9 +342,11 @@ position: relative;
     & .advantages__text {
       margin-right: 6rem;
 margin-left: 4.25rem;
+
     }
     & img {
       height: 420px;
+      padding-top: 27px;
       object-fit: contain;
     }
   }
@@ -365,6 +369,10 @@ margin-left: 4.25rem;
 .advantages-image img {
   width: 390px;
   object-fit: cover
+}
+.advantages__text--top {
+  position: relative;
+  top: -22px;
 }
 
 // steps
