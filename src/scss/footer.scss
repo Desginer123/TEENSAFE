@@ -16,14 +16,22 @@ $hover-color: #072b62;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 z-index: 666;
+
 }
 
 
 
 .scroll-to-top:hover {
   transition: all 0.3s ease-in-out;
-  background: $hover-color;
+  background: #1888BD;
 }
+
+.scroll-to-top:focus {
+  transition: all 0.3s ease-in-out;
+  background: #072B62;
+}
+
+
 
 .footer-links-wrapper {
   margin-top: 56px;
